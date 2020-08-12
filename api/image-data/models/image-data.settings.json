@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "image_data",
+  "info": {
+    "name": "Image Data"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "alt": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string"
+    },
+    "post": {
+      "model": "post",
+      "via": "image_data"
+    }
+  }
+}

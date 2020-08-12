@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "user_types",
+  "info": {
+    "name": "User Type"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "arname": {
+      "type": "string"
+    },
+    "step": {
+      "type": "integer"
+    },
+    "name": {
+      "type": "string"
+    },
+    "jdata": {
+      "type": "json"
+    }
+  }
+}

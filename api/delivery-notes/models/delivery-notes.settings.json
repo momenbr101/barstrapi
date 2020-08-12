@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "delivery_notes",
+  "info": {
+    "name": "Delivery Notes"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "Notes": {
+      "type": "richtext"
+    },
+    "jdata": {
+      "type": "json"
+    },
+    "deliverynote_status": {
+      "model": "deliverynote-status"
+    },
+    "serial": {
+      "type": "integer"
+    },
+    "booked_by": {
+      "model": "employee"
+    },
+    "reviewed_by": {
+      "model": "employee"
+    }
+  }
+}

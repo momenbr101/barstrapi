@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/delivery-notes",
+      "handler": "delivery-notes.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/delivery-notes/count",
+      "handler": "delivery-notes.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/delivery-notes/:id",
+      "handler": "delivery-notes.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/delivery-notes",
+      "handler": "delivery-notes.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/delivery-notes/:id",
+      "handler": "delivery-notes.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/delivery-notes/:id",
+      "handler": "delivery-notes.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "deliverynote_statuses",
+  "info": {
+    "name": "Deliverynote Status"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "status_name": {
+      "type": "string"
+    },
+    "hexcode": {
+      "type": "string"
+    },
+    "status_arname": {
+      "type": "string"
+    }
+  }
+}

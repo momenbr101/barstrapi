@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "post_data",
+  "info": {
+    "name": "Post Data"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "value": {
+      "type": "richtext"
+    },
+    "post": {
+      "via": "post_data",
+      "model": "post"
+    }
+  }
+}

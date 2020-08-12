@@ -1,0 +1,45 @@
+{
+  "kind": "collectionType",
+  "collectionName": "requests",
+  "info": {
+    "name": "Request"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "sender_name": {
+      "type": "string",
+      "required": true
+    },
+    "content": {
+      "type": "richtext",
+      "required": true,
+      "minLength": 10
+    },
+    "responded_at": {
+      "type": "datetime"
+    },
+    "status": {
+      "type": "integer"
+    },
+    "response": {
+      "type": "richtext"
+    },
+    "user": {
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "email": {
+      "type": "email",
+      "required": true,
+      "unique": false
+    },
+    "title": {
+      "type": "string",
+      "required": true,
+      "maxLength": 50
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/landing-page-settings",
+      "handler": "landing-page-settings.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/landing-page-settings/count",
+      "handler": "landing-page-settings.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/landing-page-settings/:id",
+      "handler": "landing-page-settings.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/landing-page-settings",
+      "handler": "landing-page-settings.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/landing-page-settings/:id",
+      "handler": "landing-page-settings.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/landing-page-settings/:id",
+      "handler": "landing-page-settings.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

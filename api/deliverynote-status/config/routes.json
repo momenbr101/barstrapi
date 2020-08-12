@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/deliverynote-statuses",
+      "handler": "deliverynote-status.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/deliverynote-statuses/count",
+      "handler": "deliverynote-status.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/deliverynote-statuses/:id",
+      "handler": "deliverynote-status.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/deliverynote-statuses",
+      "handler": "deliverynote-status.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/deliverynote-statuses/:id",
+      "handler": "deliverynote-status.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/deliverynote-statuses/:id",
+      "handler": "deliverynote-status.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

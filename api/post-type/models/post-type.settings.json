@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "post_types",
+  "info": {
+    "name": "Post Type"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "typename": {
+      "type": "string"
+    },
+    "props": {
+      "type": "json"
+    },
+    "main_menu": {
+      "type": "boolean"
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "employees",
+  "info": {
+    "name": "Employee"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "arname": {
+      "type": "string"
+    },
+    "serial": {
+      "type": "integer"
+    },
+    "user_type": {
+      "model": "user-type"
+    }
+  }
+}

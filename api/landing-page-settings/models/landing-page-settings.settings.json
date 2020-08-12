@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "landing_page_settings",
+  "info": {
+    "name": "Landing Page Settings"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "heroTitleEn": {
+      "type": "string"
+    },
+    "heroSubtitleEn": {
+      "type": "string"
+    },
+    "project": {
+      "model": "project"
+    },
+    "heroTitleAr": {
+      "type": "string"
+    },
+    "heroSubtitleAr": {
+      "type": "string"
+    },
+    "cover": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    }
+  }
+}

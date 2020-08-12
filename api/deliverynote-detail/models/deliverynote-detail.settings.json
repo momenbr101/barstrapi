@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "deliverynote_details",
+  "info": {
+    "name": "Deliverynote Detail"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "product": {
+      "model": "products"
+    },
+    "quantity": {
+      "type": "integer"
+    },
+    "delivery_note": {
+      "model": "delivery-notes"
+    }
+  }
+}
